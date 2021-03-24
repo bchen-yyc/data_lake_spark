@@ -45,10 +45,10 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 
 
 ### Files in repository and how to run them
-***dl.cfg*** file contains your AWS credentials, fill in your own credentials.
-***etl.py*** script retrieves the song and log data in the s3 bucket, transforms the data into fact and dimensional tables then loads the table data back into s3 as parquet files. Use`spark-submit etl.py` with other configurations.
-***etl.ipynb*** file demonstrate the whole etl process in a clearer way. The job is done by the etl.py script eventually.
-***create_emr.ipynb*** in case you want to provision a EMR cluster
+- ***dl.cfg*** file contains your AWS credentials, fill in your own credentials.
+- ***etl.py*** script retrieves the song and log data in the s3 bucket, transforms the data into fact and dimensional tables then loads the table data back into s3 as parquet files. Use`spark-submit etl.py` with other configurations.
+- ***etl.ipynb*** file demonstrate the whole etl process in a clearer way. The job is done by the etl.py script eventually.
+- ***create_emr.ipynb*** in case you want to provision a EMR cluster
 
 [Million Song Dataset]:https://labrosa.ee.columbia.edu/millionsong/
 [event simulator]:https://github.com/Interana/eventsim
